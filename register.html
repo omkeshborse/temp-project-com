@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign in & Sign up Form</title>
+    <link href="./style/register.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <img src="./assets/ldkb.png" class="image" alt="Background Image" height="400" width="400" />
+        </div>
+        <div class="panel right-panel">
+            <div class="login">
+                <form id="dynamicForm" onsubmit="">
+                    <h1 style="text-align: center;">Sign up</h1>
+                    
+                    <label for="name">Full Name as per Aadhar <span class="required-star">*</span></label>
+                    <input type="text" id="name" placeholder="Full Name as per Aadhar" required>
+                    <div class="error" id="name-error">Full Name is required.</div>
+                    
+                    <label for="mobile">Mobile No. <span class="required-star">*</span></label>
+                    <input type="text" id="mobile" placeholder="Mobile No." required>
+                    <div class="error" id="mobile-error">Mobile No. is required.</div>
+                    
+                    <label for="password">Password <span class="required-star">*</span></label>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="error" id="password-error">Password is required.</div>
+                    
+                    <label for="cpassword">Confirm Password <span class="required-star">*</span></label>
+                    <input type="password" id="cpassword" placeholder="Confirm Password" required>
+                    <div class="error" id="cpassword-error">Confirm Password is required.</div>
+                    
+                    <label for="district">District <span class="required-star">*</span></label>
+                    <select id="district" required>
+                        <option value="" disabled selected>Select your district</option>
+                        <option value="district1">District 1</option>
+                        <option value="district2">District 2</option>
+                        <option value="district3">District 3</option>
+                    </select>
+                    <span class="error" id="districtError">District is required.</span>			
+                    
+                    <label for="taluka">Taluka <span class="required-star">*</span></label>
+					<select id="taluka" name="taluka" disabled>
+		            <option value="">Select Taluka</option>
+					</select>
+				  <span class="error" id="talukaError">Tehsil is required.</span>
+					              
+					
+                    <label for="village">Village <span class="required-star">*</span></label>
+					<select id="village" name="village" disabled>
+		            <option value="">Select Village</option>
+					</select>
+			        <span class="error" id="villageError">Village is required.</span>
+		                   
+                    <label for="corporation">Municipal Corporation / Council <span class="required-star">*</span></label>
+                    <select id="corporation" required>
+                        <option value="" disabled selected>Select Municipal Corporation</option>
+                        <option value="corporation1">Corporation 1</option>
+                        <option value="corporation2">Corporation 2</option>
+                        <option value="corporation3">Corporation 3</option>
+                    </select>
+                    <div class="error" id="corporation-error">Municipal Corporation is required.</div>
+                    
+                    <label for="authorized-person">Authorized Person <span class="required-star">*</span></label>
+                    <select id="authorized-person" required>
+                        <option value="" disabled selected>Select Authorized Person</option>
+                        <option value="person1">Person 1</option>
+                        <option value="person2">Person 2</option>
+                        <option value="person3">Person 3</option>
+                    </select>
+                    <div class="error" id="authorized-person-error">Authorized Person is required.</div>
+                    
+                   
+                    
+                    <div class="button-container">
+                        <button type="button" class="login-btn">Refresh</button>
+                        <button type="submit" class="login-btn">Sign up</button>
+                    </div>
+                    
+                    <p>
+                        <span class="text">Already Have an Account?</span>
+                        <a href="./login.html" class="create-account-link">Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+	
+	
+    
+</body>
+</html>
